@@ -1,0 +1,118 @@
+body {
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+    text-align: center;
+    color: grey;
+    font-size: 40px;
+}
+
+#search {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+
+#events-container {
+    width: 80%;
+    height: 600px;
+    margin: auto;
+}
+
+#events {
+    background: grey;
+    color: black;
+}
+
+#event{
+    border: 2px solid black;
+}
+
+#details1{
+    background: rgb(134, 199, 224);
+    padding: 8px;
+}
+
+#description1 {
+    background: rgb(201, 229, 238);
+    padding: 8px;
+    overflow-wrap: break-word;
+}
+
+#details2{
+    background: rgb(120, 194, 175);
+    padding: 8px;
+}
+
+#description2 {
+    background: rgb(200, 245, 241);
+    padding: 8px;
+    overflow-wrap: break-word;
+}
+
+/* Style the search field */
+input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    background: #f1e0fc;
+    align-self: center;
+    width: 85%;
+    margin: auto;
+}
+
+/* Style the submit button */
+button {
+    width: 10%;
+    padding: 10px;
+    background: rgb(229, 156, 247);
+    color: white;
+    font-size: 17px;
+    border: 1px solid black;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+    input {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+}
+
+.pagination {
+    margin: auto;
+    align-items: center;
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.break a {
+    cursor: default;
+}
